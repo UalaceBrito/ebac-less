@@ -1,0 +1,56 @@
+// ============================================================
+//  MAPS (NAMESPACES)
+//  Agrupamento de configurações por contexto
+// ============================================================
+
+#buttons {
+  .primary() {
+    background: @color-primary;
+    color: @color-white;
+    &:hover {
+      background: @color-primary-dark;
+    }
+  }
+  .secondary() {
+    background: transparent;
+    color: @color-primary;
+    border: 2px solid @color-primary;
+    &:hover {
+      background: @color-primary;
+      color: @color-white;
+    }
+  }
+  .danger() {
+    background: @color-danger;
+    color: @color-white;
+    &:hover {
+      background: darken(@color-danger, 10%);
+    }
+  }
+}
+
+#spacing {
+  .padding(@size) {
+    padding: @size;
+  }
+  .margin(@size) {
+    margin: @size;
+  }
+}
+
+#typography {
+  .heading-1() {
+    font-size: @font-size-4xl;
+    font-weight: @font-weight-extrabold;
+    line-height: 1.2;
+  }
+  .heading-2() {
+    font-size: @font-size-3xl;
+    font-weight: @font-weight-bold;
+    line-height: 1.2;
+  }
+  .body-large() {
+    font-size: @font-size-lg;
+    line-height: 1.6;
+  }
+}

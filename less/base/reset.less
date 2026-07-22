@@ -1,0 +1,49 @@
+// ============================================================
+//  RESET
+//  Reset CSS moderno (baseado em normalize e boas práticas)
+// ============================================================
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: @font-family-base;
+  background-color: @color-bg;
+  color: @color-text;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+// Evita overflow em elementos de bloco
+h1, h2, h3, h4, h5, h6, p {
+  overflow-wrap: break-word;
+}

@@ -1,0 +1,45 @@
+// ============================================================
+//  GLOBAL
+//  Estilos globais e utilitários
+// ============================================================
+
+// Classes utilitárias de texto
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+// Utilitários de espaçamento (exemplo)
+.mt-1 { margin-top: @spacing-sm; }
+.mt-2 { margin-top: @spacing-md; }
+.mt-3 { margin-top: @spacing-lg; }
+.mb-1 { margin-bottom: @spacing-sm; }
+.mb-2 { margin-bottom: @spacing-md; }
+.mb-3 { margin-bottom: @spacing-lg; }
+.p-1 { padding: @spacing-sm; }
+.p-2 { padding: @spacing-md; }
+.p-3 { padding: @spacing-lg; }
+
+// Esconder visualmente (acessibilidade)
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+// Clearfix
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}

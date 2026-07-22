@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EbacStore - Produtos Premium</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <!-- Logo SVG inline -->
+        <svg viewBox="0 0 24 24" width="32" height="32">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
+        </svg>
+        EbacStore
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        ☰
+      </button>
+      <nav class="navigation" id="navigation">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Produtos que transformam</h1>
+      <p>Descubra a nova coleção com design exclusivo e tecnologia de ponta.</p>
+      <a href="#" class="btn">Ver coleção</a>
+    </div>
+  </section>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="container">
+      <div class="banner-content">
+        <div class="banner-text">
+          <h2>Ofertas imperdíveis</h2>
+          <p>Aproveite descontos especiais em toda a linha. Frete grátis para a primeira compra.</p>
+          <a href="#" class="btn btn-primary">Comprar agora</a>
+        </div>
+        <div class="banner-image">
+          <img src="images\pexels-apasaric-1510595.jpg" alt="Banner promocional">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section class="products">
+    <div class="container">
+      <div class="section-title">
+        <h2>Produtos em destaque</h2>
+        <p>Selecionados especialmente para você</p>
+      </div>
+      <div class="product-grid">
+        <!-- Produto 1 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images\pexels-karola-g-7876970.jpg" alt="Produto 1">
+          </div>
+          <div class="product-info">
+            <h3>Camiseta Tech</h3>
+            <p class="price">R$ 89,90</p>
+            <a href="#" class="btn">Adicionar</a>
+          </div>
+        </div>
+        <!-- Produto 2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images\pexels-airamdphoto-20044399.jpg" alt="Produto 2">
+          </div>
+          <div class="product-info">
+            <h3>Mochila Executive</h3>
+            <p class="price">R$ 199,00</p>
+            <a href="#" class="btn">Adicionar</a>
+          </div>
+        </div>
+        <!-- Produto 3 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images\pexels-anchukk-30428606.jpg" alt="Produto 3">
+          </div>
+          <div class="product-info">
+            <h3>Fone Bluetooth</h3>
+            <p class="price">R$ 149,90</p>
+            <a href="#" class="btn">Adicionar</a>
+          </div>
+        </div>
+        <!-- Produto 4 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images\pexels-indraprojectsofficial-18662969.jpg" alt="Produto 4">
+          </div>
+          <div class="product-info">
+            <h3>Relógio Smart</h3>
+            <p class="price">R$ 299,00</p>
+            <a href="#" class="btn">Adicionar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Fique por dentro</h2>
+      <p>Assine nossa newsletter e receba novidades e ofertas exclusivas.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Seu melhor e-mail" required>
+        <button type="submit" class="btn">Assinar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>EbacStore</h4>
+          <ul>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Carreiras</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Atendimento</h4>
+          <ul>
+            <li><a href="#">Central de ajuda</a></li>
+            <li><a href="#">Trocas e devoluções</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Redes sociais</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 EbacStore. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

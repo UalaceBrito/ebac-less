@@ -1,0 +1,19 @@
+// ============================================================
+//  FUNCTIONS
+//  Funções LESS personalizadas (quando possível)
+// ============================================================
+
+// Função para converter px para rem (base 16px)
+.px-to-rem(@px) {
+  @result: unit(@px / 16, rem);
+}
+
+// Função para calcular largura em % a partir de colunas (grid de 12 colunas)
+.col-width(@cols, @total: 12) {
+  @width: percentage(@cols / @total);
+}
+
+// Função para escurecer ou clarear cor baseada em luminosidade
+.adjust-color(@color, @amount: 10%) {
+  @result: if(luma(@color) > 50%, darken(@color, @amount), lighten(@color, @amount));
+}

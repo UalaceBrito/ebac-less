@@ -1,0 +1,53 @@
+// ============================================================
+//  BUTTONS
+//  Estilos de botões usando mixins e maps
+// ============================================================
+
+.btn {
+  // Botão primário (map)
+  &-primary {
+    #buttons.primary();
+    .btn-base();
+  }
+  &-secondary {
+    #buttons.secondary();
+    .btn-base(transparent, @color-primary);
+    border: 2px solid @color-primary;
+    &:hover {
+      background: @color-primary;
+      color: @color-white;
+    }
+  }
+  &-danger {
+    #buttons.danger();
+    .btn-base(@color-danger, @color-white);
+  }
+  &-outline {
+    .btn-base(transparent, @color-primary);
+    border: 2px solid @color-primary;
+    &:hover {
+      background: @color-primary;
+      color: @color-white;
+    }
+  }
+  &-white {
+    .btn-base(@color-white, @color-primary);
+  }
+
+  // Tamanhos
+  &-sm {
+    padding: 0.4rem 1rem;
+    font-size: @font-size-sm;
+  }
+  &-lg {
+    padding: 1rem 2.5rem;
+    font-size: @font-size-lg;
+  }
+
+  // Desabilitado
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+  }
+}

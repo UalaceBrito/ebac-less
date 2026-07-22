@@ -1,0 +1,51 @@
+// ============================================================
+//  CARDS
+//  Componente de cartão reutilizável
+// ============================================================
+
+.card {
+  background: @color-white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  .shadow-sm();
+  .transition(all, 0.3s);
+
+  &:hover {
+    transform: translateY(-4px);
+    .shadow-lg();
+  }
+
+  .card-image {
+    background: @color-border;
+    height: 200px;
+    .flex-center();
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .card-body {
+    padding: @spacing-lg;
+  }
+
+  .card-title {
+    font-size: @font-size-lg;
+    font-weight: @font-weight-semibold;
+    margin-bottom: @spacing-sm;
+    color: @color-secondary;
+  }
+
+  .card-text {
+    color: @color-text-light;
+    font-size: @font-size-sm;
+    margin-bottom: @spacing-md;
+  }
+
+  .card-footer {
+    padding: @spacing-md @spacing-lg;
+    border-top: 1px solid @color-border;
+    background: @color-bg-light;
+  }
+}

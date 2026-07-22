@@ -1,0 +1,32 @@
+// ============================================================
+//  BANNER
+//  Banner promocional com imagem e texto
+// ============================================================
+
+.banner {
+  padding: @spacing-2xl 0;
+  background: @color-bg-light;
+
+  .banner-content {
+    display: flex;
+    align-items: center;
+    gap: @spacing-xl;
+    flex-wrap: wrap;
+
+    .banner-text {
+      flex: 1 1 300px;
+      h2 {
+        color: @color-secondary;
+      }
+      p {
+        color: @color-text-light;
+      }
+    }
+    .banner-image {
+      flex: 1 1 300px;
+      .rounded();
+      overflow: hidden;
+      .shadow-md();
+    }
+  }
+}

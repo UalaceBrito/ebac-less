@@ -1,0 +1,47 @@
+// ============================================================
+//  NAVIGATION
+//  Menu de navegação (responsivo com toggle)
+// ============================================================
+
+.navigation {
+  ul {
+    display: flex;
+    gap: @spacing-xl;
+    align-items: center;
+
+    li a {
+      font-weight: @font-weight-medium;
+      color: @color-text;
+      .transition(color, 0.2s);
+      &:hover {
+        color: @color-primary;
+      }
+    }
+  }
+
+  .responsive(@breakpoint-md, {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: @color-white;
+    padding: @spacing-lg;
+    .shadow-md();
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+
+    &.open {
+      transform: scaleY(1);
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    ul {
+      flex-direction: column;
+      gap: @spacing-md;
+    }
+  });
+}

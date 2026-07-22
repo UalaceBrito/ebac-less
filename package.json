@@ -1,0 +1,25 @@
+{
+  "name": "ebac-less",
+  "version": "1.0.0",
+  "description": "Landing page profissional com LESS - Exercício EBAC",
+  "main": "index.html",
+  "scripts": {
+    "dev": "less-watch-compiler less css main.less --source-map",
+    "build": "lessc less/main.less css/main.css --clean-css --source-map",
+    "watch": "less-watch-compiler less css main.less"
+  },
+  "keywords": [
+    "less",
+    "landing-page",
+    "ebac",
+    "css"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "devDependencies": {
+    "less": "^4.2.0",
+    "less-watch-compiler": "^1.16.3",
+    "clean-css": "^5.3.2",
+    "less-plugin-clean-css": "^1.5.1"
+  }
+}

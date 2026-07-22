@@ -1,0 +1,45 @@
+// ============================================================
+//  HEADER
+//  Cabeçalho da página com logo e menu
+// ============================================================
+
+.header {
+  background-color: @color-white;
+  .shadow-sm();
+  padding: @spacing-md 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: @font-size-xl;
+    font-weight: @font-weight-extrabold;
+    color: @color-secondary;
+    display: flex;
+    align-items: center;
+    gap: @spacing-sm;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      fill: @color-primary;
+    }
+  }
+
+  .nav-toggle {
+    display: none;
+    .button-reset();
+    font-size: @font-size-xl;
+    color: @color-text;
+
+    .responsive(@breakpoint-md, {
+      display: block;
+    });
+  }
+}

@@ -1,0 +1,46 @@
+// ============================================================
+//  HERO
+//  Seção principal de destaque
+// ============================================================
+
+.hero {
+  padding: @spacing-3xl 0;
+  background: @gradient-primary;
+  color: @color-white;
+  text-align: center;
+
+  h1 {
+    font-size: @font-size-4xl;
+    margin-bottom: @spacing-md;
+  }
+
+  p {
+    font-size: @font-size-lg;
+    max-width: 600px;
+    margin: 0 auto @spacing-xl;
+    opacity: 0.9;
+  }
+
+  .btn {
+    .btn-base(@color-white, @color-primary);
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  .responsive(@breakpoint-md, {
+    padding: @spacing-2xl 0;
+    h1 {
+      font-size: @font-size-3xl;
+    }
+    p {
+      font-size: @font-size-base;
+    }
+  });
+
+  .responsive(@breakpoint-sm, {
+    h1 {
+      font-size: @font-size-2xl;
+    }
+  });
+}

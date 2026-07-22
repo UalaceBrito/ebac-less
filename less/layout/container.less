@@ -1,0 +1,18 @@
+// ============================================================
+//  CONTAINER
+//  Layout centralizado com padding responsivo
+// ============================================================
+
+.container {
+  max-width: @breakpoint-xl;
+  margin: 0 auto;
+  padding: 0 @spacing-lg;
+
+  .responsive(@breakpoint-md, {
+    padding: 0 @spacing-md;
+  });
+
+  .responsive(@breakpoint-sm, {
+    padding: 0 @spacing-sm;
+  });
+}
